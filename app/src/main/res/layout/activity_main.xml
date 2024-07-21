@@ -6,13 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/image2" />
+
+    <View
+        android:id="@+id/overlayView"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:background="#80000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Veteriner Uygulaması"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImageView"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:padding="16dp"
+        android:text="VetCare'e Hoş Geldiniz! En yakın veterinerlerden fiyat teklifi alın, randevu oluşturun ve evcil hayvanınızın sağlık geçmişini takip edin. VetCare ile evcil hayvanınızın aşılarını zamanında yaptırın, veteriner ziyaretlerini kolayca planlayın ve ilaç ihtiyaçlarını anında karşılayın. Uygulama sayesinde, evcil hayvanınızın tüm sağlık bilgilerine tek bir yerden erişebilir ve veterinerlerin sunduğu özel hizmetlerden haberdar olabilirsiniz."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/loginButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5A6EDA"
+        android:paddingHorizontal="32dp"
+        android:text="Giriş Yap"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="590dp" />
+
+    <Button
+        android:id="@+id/signupButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5A6EDA"
+        android:paddingHorizontal="32dp"
+        android:text="Kayıt Ol"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="590dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
