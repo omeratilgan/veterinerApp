@@ -1,7 +1,9 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -38,6 +40,9 @@ public class homeScreen extends AppCompatActivity {
                     // Dashboard seçildiğinde yapılacak işlemler
                     return true;
                 } else if (itemId == R.id.navigation_calendar) {
+                    Intent giris = new Intent(homeScreen.this, dateScreen.class);
+                    startActivity(giris);
+                    finish();
                     // Notifications seçildiğinde yapılacak işlemler
                     return true;
                 } else if (itemId == R.id.navigation_accessory) {
