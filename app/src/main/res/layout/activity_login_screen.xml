@@ -59,13 +59,14 @@
         android:layout_marginTop="20dp" />
 
     <Button
-        android:id="@+id/kayitolButtonId"
+        android:id="@+id/signInId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kayıt Ol"
-        app:layout_constraintTop_toBottomOf="@+id/sifreId"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:onClick="loginButton"
+        android:text="Giriş Yap"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifreId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,14 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void girisYap(View view){
-        Intent giris = new Intent(this, loginScreen.class);
+    public void loginButton(View view){
+        Intent giris = new Intent(MainActivity.this, loginScreen.class);
         startActivity(giris);
         finish();
     }
 
-    public void kayitOl(View view){
-        Intent giris = new Intent(this, signinScreen.class);
+    public void signInButton(View view){
+        Intent giris = new Intent(MainActivity.this, signinScreen.class);
         startActivity(giris);
         finish();
     }
